@@ -5,8 +5,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Свалка</title>
 </head>
-<body>
+<body class="bg-gray-900 px-4">
+    <!-- Header -->
+  <header class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-10">
+      <span class="text-3xl text-titleTextColor">СвалкаИгр</span>
+      <div class="hidden md:flex space-x-5 text-linkColor">
+        <a href="#about" class="text-titleTextColor hover:text-amber-300">About</a>
+        <a href="#games" class="text-titleTextColor hover:text-amber-300">Games</a>
+        <a href="#contacts" class="text-titleTextColor hover:text-amber-300">Contacts</a>
+      </div>
+      <button class="inline-bloc text-titleTextColor md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      </button>
+    </div>
+
+  </header>
+
+   <!-- main -->
+
+   <div class="container mx-auto">
+    <!-- Секция с текстом и мини-превью -->
+    <section class="md:flex md:space-x-10 py-5">
+      <!-- Блок слева с текстом -->
+      <div class="px-4 pb-4 md:w-1/3">
+        <div>
+          <span class="pt-4 text-titleTextColor font-bold text-3xl">Моя свалка игр</span>
+          <p class="text-gray-200 pt-4 text-xl">Сюда буду скидывать все идеи, прототипы и может даже готовые игрушки.</p>
+          <p class="text-gray-200 pt-4 text-xl">По умолчанию игрушки запускаются на десктопной версии браузера. Со временем буду адаптировать и для мобилок</p>
+          <p class="text-gray-200 pt-4 text-sm">Ниже оставлю контакты, скидывайте идеи и предложения к сотрудничеству.</p>
+        </div>
+      </div>
+      <div class="px-4 md:w-2/3 md:pl-2">
+        <div class="grid gap-4 grid-cols-2 md:grid-cols-3 place-content-stretch">
+          <!-- игра Jumper -->
+          <div>
+            <div class="block border-2 border-gray-200">
+              <a  href="/games/jumper/index.html">
+                <img class="w-full h-full" src="/imgs/jumper.png" alt="jumper game">
+              </a>
+            </div>
+            <div class="text-gray-200 text-center bg-purple rounded mt-4 p-1">
+              <a  href="/games/jumper/index.html">Jumper</a>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- игра Droids -->
+          <div>
+            <div class="block border-2 border-gray-200">
+              <a  href="/games/droids/index.html">
+                <img class="w-full h-full" src="/imgs/droids.png" alt="droids game">
+              </a>
+            </div>
+            <div class="text-gray-200 text-center bg-purple rounded mt-4 p-1">
+              <a  href="/games/droids/index.html">Droids</a>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- игра Parts -->
+          <div>
+            <div class="block border-2 border-gray-200">
+              <a  href="games/parts/index.html">
+                <img class="w-full h-full" src="/imgs/parts.png" alt="parts">
+              </a>
+            </div>
+            <div class="text-gray-200 text-center bg-purple rounded mt-4 p-1">
+              <a href="games/parts/index.html">Droid`s parts</a>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- блок содержит картинку с обводкой и текст снизу -->
+          <div>
+            <div class="block border-2 border-gray-200">
+              <a  href="#">
+                <img class="w-full h-full" src="/imgs/img1.png" alt="cube">
+              </a>
+            </div>
+            <div class="text-gray-200 text-center bg-purple rounded mt-4 p-1">
+              <a href="#">В планах</a>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- блок содержит картинку с обводкой и текст снизу -->
+          <div>
+            <div class="block border-2 border-gray-200">
+              <a  href="#">
+                <img class="w-full h-full" src="/imgs/img1.png" alt="cube">
+              </a>
+            </div>
+            <div class="text-gray-200 text-center bg-purple rounded mt-4 p-1">
+              <a href="#">В планах</a>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- блок содержит картинку с обводкой и текст снизу -->
+          <div>
+            <div class="block border-2 border-gray-200">
+              <a  href="#">
+                <img class="w-full h-full" src="/imgs/img1.png" alt="cube">
+              </a>
+            </div>
+            <div class="text-gray-200 text-center bg-purple rounded mt-4 p-1">
+              <a href="#">В планах</a>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Секция с превью и описаниями игрушек -->
+    <section class="px-4 py-8">
+      <div id="games" class="container mx-auto text-titleTextColor text-xl font-bold text-center">
+        Игрульки
+      </div>
+      <br>
+      <p class="text-titleTextColor text-center">Внимание!</p>
+      <p class="text-titleTextColor text-center">Повторюсь, игрушки пока не адаптированы к маленьким экранам!</p>
+      <p class="text-titleTextColor text-center">Играйте с компа или ноута.</p>
+      <br>
+      <!-- Игрушка Jumper -->
+      <div class="md:flex md:space-x-10 py-5">
+        <div class="md:w-1/3">
+          <a href="/games//jumper/index.html">
+            <img src="/imgs/jumper.png" alt="jumper game" class="w-full">
+          </a>
+        </div>
+        <div class="md:w-2/3 text-gray-300">
+          <span>Jumper</span>
+          <br><br>
+          <p>Играем за меленького пингвина(пока это зеленый кубик).</p>
+          <p>Нужно прыгать по льдинкам, которые разрушаются.
+            Цель - добраться до выхода(синий кубик).
+            Пока сделано так, что выход открыт сразу.
+            Прыгать можно только на соседние льдинки, кликнув по ним мышкой.
+            На некоторые льдинки можно наступать несколько раз, но с каждым разом их прочность падает.
+            Планируется заставить игрока разрушить все льдинки, чтобы открыть выход.
+          </p>
+        </div>
+      </div>
+
+      <!-- Игрушка Droids -->
+      <div class="md:flex md:space-x-10 py-5">
+        <div class="md:w-1/3">
+          <a href="/games//droids/index.html">
+            <img src="/imgs/droids.png" alt="droids game" class="w-full">
+          </a>
+        </div>
+        <div class="md:w-2/3 text-gray-300">
+          <span>Droids</span>
+          <br><br>
+          <p>Собираем роботов.</p>
+          <p>Завод по изготовлению роботов сошел с ума и не может остановиться.
+            Роботы - штука дорогая и хрупкая. Нужно аккуратно ловить все, что валится из конвейера.
+            Тележка для сбора роботов обладает искуственным интеллектом и следует за курсором мышки.
+          </p>
+        </div>
+      </div>
+
+      <!-- Игрушка Parts -->
+      <div class="md:flex md:space-x-10 py-5">
+        <div class="md:w-1/3">
+          <a href="/games/parts/index.html" >
+            <img src="/imgs/parts.png" alt="parts game" class="w-full">
+          </a>
+        </div>
+        <div class="md:w-2/3 text-gray-300">
+          <span>Droid`s parts</span>
+          <br><br>
+          <p>У нас на заводе новый работник.</p>
+          <p>Его задача - ловить запчасти для дроидов.
+            Вы назначены его мастером. Проблема в том, что его видео и аудио сенсоры не настроены (бракованый тип).
+            Все, что он воспринимает - команды с пульта управления.
+          </p>
+          <br>
+          <p>Запомните, для перемещения сборщика к левому верхнему потоку - жмите A</p>
+          <p>Левый нижний поток - Z</p>
+          <p>Правый верхний поток - D</p>
+          <p>Правый нижний поток - X</p>
+          <br>
+          <p>Не налажайте!</p>
+        </div>
+      </div>
+      <!-- end -->
+    </section>
+    <hr>
+
+    <!-- Секция с участниками -->
+    <section class="px-4 py-8">
+      <div id="about" class="container mx-auto text-titleTextColor text-xl font-bold text-center">
+        Кто это натворил?
+      </div>
+      <div class="md:flex md:space-x-10 py-5">
+        <div class="w-72 py-8 mx-auto md:w-1/3">
+            <img src="imgs/autor01.png" alt="autor" class="rounded-full max-w-full h-auto align-middle border-none pb-4">
+
+            <div class="text-center">
+              <p class="text-lg text-gray-300">Третьяков Евгений</p>
+              <p class="text-gray-300">Код, идеи</p>
+            </div>
+        </div>
+        <div class="w-72 py-8 mx-auto md:w-1/3">
+          <img src="imgs/autor02.png" alt="autor" class="rounded-full max-w-full h-auto align-middle border-none pb-4">
+          <div class="text-center">
+            <p class="text-lg text-gray-300">Комиссаров Михаил</p>
+            <p class="text-gray-300">Графика, идеи</p>
+          </div>
+        </div>
+        <div class="w-72 py-8 mx-auto md:w-1/3">
+          <img src="imgs/autor03.png" alt="autor" class="rounded-full max-w-full h-auto align-middle border-none pb-4">
+          <div class="text-center">
+            <p class="text-lg text-gray-300">Кто нибудь еще?</p>
+            <p class="text-gray-300">На будущее</p>
+          </div>
+        </div>
+      </div>
+      <div class="py-8 text-gray-300">
+        <p>Может перенесу потом сайт на react, будет возможность вести блог, девлог, собирать отзывы.</p>
+        <P>В настоящее время сайт на бесплатном хостинге без ssl, что автоматом относит его к ненадежным и потенциально опасным)))
+           но в процессе это тоже можно будет поправить и вести сюда трафик, если из этой задумки что-нибудь получится.</P>
+          <br><p>...стоп, что значит "если получится"?</p>
+      </div>
+    </section>
+    <hr>
+  </div>
 </body>
 </html>
